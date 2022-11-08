@@ -11,7 +11,9 @@ namespace LearningJumpstart.Models
         public int Defense { get; set; } = 10;
         public int Intelligence { get; set; } = 10;
         public EmptyEnumeration Class { get; set; } = EmptyEnumeration.Knight;
-        public User? User { get; set; }  
+        public User? User { get; set; }
+        public Weapon Weapon { get; set; }
+        public List<Skill>Skills { get; set; }
     }
 }
 

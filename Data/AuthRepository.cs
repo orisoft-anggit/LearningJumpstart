@@ -102,7 +102,7 @@ namespace LearningJumpstart.Data
             };
 
             SymmetricSecurityKey key = new SymmetricSecurityKey(System.Text.Encoding.UTF8
-                .GetBytes(_configuration.GetSection("AppSettings.Token").Value));
+                .GetBytes(_configuration.GetSection("AppSettings:Token").Value));
 
             SigningCredentials creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha512Signature);
 

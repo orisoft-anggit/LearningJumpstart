@@ -7,6 +7,7 @@ using LearningJumpstart.Service.CharacterService;
 using Microsoft.AspNetCore.Mvc;
 using LearningJumpstart.Dtos.Character;
 using Microsoft.AspNetCore.Authorization;
+using System.Security.Claims;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 

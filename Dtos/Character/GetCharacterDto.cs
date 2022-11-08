@@ -14,6 +14,7 @@ namespace LearningJumpstart.Dtos.Character
         public int Defense { get; set; } = 10;
         public int Intelligence { get; set; } = 10;
         public EmptyEnumeration Class { get; set; } = EmptyEnumeration.Knight;
+        public GetWeaponDto Weapon { get; set; }
     }
 }
 

@@ -10,6 +10,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace LearningJumpstart.Controllers
 {
+    [ApiController]
+    [Route("api/[controller]")]
     public class AuthController : ControllerBase
     {
         private readonly IAuthRepository _authRepo;
@@ -19,7 +21,7 @@ namespace LearningJumpstart.Controllers
             _authRepo = authRepo;
         }
 
-        [HttpPost("auth/register")]
+        [HttpPost("register")]
         public async Task<ActionResult<ServiceResponse<int>>> Register(UserRegisterDto request)
         {
             var response = await _authRepo.Register(
@@ -32,7 +34,7 @@ namespace LearningJumpstart.Controllers
             return Ok(response);
         }
 
-        [HttpPost("auth/login")]
+        [HttpPost("login")]
         public async Task<ActionResult<ServiceResponse<string>>> Login(UserLoginDto request)
         {
             var response = await _authRepo.Login(request.Username , request.Password);

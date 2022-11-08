@@ -34,6 +34,7 @@
     <None Remove="Microsoft.EntityFrameworkCore" />
     <None Remove="Microsoft.AspNetCore.Authentication.JwtBearer" />
     <None Remove="Swashbuckle.AspNetCore.Filters" />
+    <None Remove="Service\WeaponService\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
@@ -42,5 +43,6 @@
     <Folder Include="Dtos\" />
     <Folder Include="Dtos\Character\" />
     <Folder Include="Data\" />
+    <Folder Include="Service\WeaponService\" />
   </ItemGroup>
 </Project>
